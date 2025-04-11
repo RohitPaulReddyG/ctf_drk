@@ -33,6 +33,74 @@
           "hint": "Look inside the .reg file contents."
         }
       ]
+    },
+    {
+      "event": "Dark Web Transactions (Mar 8, 2023)",
+      "questions": [
+        {
+          "id": "q5",
+          "question": "What BTC amount was transferred?",
+          "answer": "0.5",
+          "hint": "Inspect the .csv file in the Crypto folder."
+        },
+        {
+          "id": "q6",
+          "question": "What is the wallet address found?",
+          "answer": "3QyYvVW1aW3j6QybxdVRo3X8Go9v9y6k7K",
+          "hint": "It’s in the same Transactions.csv file."
+        }
+      ]
+    },
+    {
+      "event": "Hidden Folder Trace (Mar 10, 2023)",
+      "questions": [
+        {
+          "id": "q7",
+          "question": "What was the name of the deleted folder accessed?",
+          "answer": "DRK_Config",
+          "hint": "Correlate shellbag activity with deleted folders."
+        },
+        {
+          "id": "q8",
+          "question": "Which artifact logs shellbag activity?",
+          "answer": "shellbag_trace.txt",
+          "hint": "Located in the Logs folder."
+        }
+      ]
+    },
+    {
+      "event": "DRK Audio Planting (Mar 14, 2023)",
+      "questions": [
+        {
+          "id": "q9",
+          "question": "What was the name of the final whisper audio file?",
+          "answer": "whisper_final.wav",
+          "hint": "Look in Music/DRK folder."
+        },
+        {
+          "id": "q10",
+          "question": "What phrase was hidden in the audio?",
+          "answer": "You were the harmony",
+          "hint": "Reverse the .wav file using Audacity or similar."
+        }
+      ]
+    },
+    {
+      "event": "Final Orchestration (Mar 18, 2023)",
+      "questions": [
+        {
+          "id": "q11",
+          "question": "What file exists inside the mounted VHD?",
+          "answer": "FinalApprentice.txt",
+          "hint": "Mount DeadChannel.vhd from Documents/Volumes."
+        },
+        {
+          "id": "q12",
+          "question": "What does FinalApprentice.txt say?",
+          "answer": "I was just movement two",
+          "hint": "Open the text file after mounting."
+        }
+      ]
     }
   ]
 }
