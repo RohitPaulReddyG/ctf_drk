@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Level <%= level %></title>
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    function toggleHint(id) {
+      var hint = document.getElementById('hint_' + id);
+      hint.style.display = hint.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <h2><%= data.event %></h2>
+  <form method="POST">
+    <% data.questions.forEach(q => { %>
+      <p>
+        <label><%= q.question %></label><br>
+        <input type="text" name="<%= q.id %>" required>
+        <button type="button" onclick="toggleHint('<%= q.id %>')">Show Hint</button>
+        <div id="hint_<%= q.id %>" style="display:none;color:#ccc;font-style:italic;"><%= q.hint %></div>
+      </p>
+    <% }) %>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

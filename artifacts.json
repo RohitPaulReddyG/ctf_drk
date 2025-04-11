@@ -1,0 +1,38 @@
+{
+  "levels": [
+    {
+      "event": "Initial Contact (Mar 1, 2023)",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What alias contacted Damian first?",
+          "answer": "RequiemMaster",
+          "hint": "Check exported chat logs in Documents/Communications."
+        },
+        {
+          "id": "q2",
+          "question": "Which file logs the first message?",
+          "answer": "chat_export.json",
+          "hint": "It’s a JSON file in the Communications folder."
+        }
+      ]
+    },
+    {
+      "event": "DRK Promotion (Mar 5, 2023)",
+      "questions": [
+        {
+          "id": "q3",
+          "question": "Which registry key shows Damian as the apprentice?",
+          "answer": "ApprenticeFlag.reg",
+          "hint": "Check the Registry folder for .reg files."
+        },
+        {
+          "id": "q4",
+          "question": "What value is set for the 'Role' key?",
+          "answer": "Apprentice",
+          "hint": "Look inside the .reg file contents."
+        }
+      ]
+    }
+  ]
+}
